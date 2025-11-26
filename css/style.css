@@ -1,0 +1,247 @@
+* {
+    /* Reseteo */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    /* 1rem = 10px */
+    font-size: 62.5%;
+}
+
+body {
+    font-family:"montserrat", sans-serif;
+    line-height: 1.5;
+    font-size: 1.6rem; 
+    background: #f4f2f6;
+    color: #000000;
+
+    display: flex;
+    flex-direction: column;
+    height: 100vh; /* ocupa toda la pantalla */
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    padding-bottom: 2rem;
+
+    flex:1; /*el main ocupe todo lo que pueda*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+h1 {
+    color: #30014a;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+h2 {
+    color: #343434;
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.btn {
+    background: #f4f2f6;
+    border-style: solid;
+    border-color: #30014a;
+    color:black;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+
+.btn:hover {
+    background: #ca9ff5;
+    border-style: solid;
+    border-color: #30014a;
+    color:black;
+}
+
+.btn-form{
+    background: #30014a;
+    border-style: solid;
+    border-color: #f4f2f6;
+    color:#ffffff;
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.6rem;
+    border-radius: 1rem;
+}
+.btn a{
+    color: #000000;
+}
+
+.btn-eliminar-carrito{
+    background-color: red;
+    border: 2px solid red;
+    color:white;
+}
+
+.btn-eliminar-carrito:hover{
+    background-color: rgb(241, 105, 105);
+    border: 2px solid red;
+    color:black;
+}
+
+.btn-vaciar-carrito{
+    background-color: yellow;
+    color: black;
+}
+
+.btn-vaciar-carrito:hover{
+    background-color: rgb(238, 238, 84);
+}
+
+header,footer {
+    background: #5c4a7a;
+    color: #fff7fb;
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+.div-logo {
+    margin-left: 2rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.logo, .header-nav ul li a{
+    text-decoration: none;
+    font-size: 3rem;
+
+    color:inherit;
+    display: inline-block;
+    padding: 2rem;
+}
+
+.header-nav {
+    margin-right: 2rem;
+}
+
+.header-nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+footer{
+    display: inline;
+    text-align: center;
+}
+
+.titulo-home{
+    margin: 3rem 0;
+}
+
+.titulo-productos{
+    text-align: center;
+    margin: 3rem 0;
+}
+
+.parrafo{
+    width: 80%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.contenedor-tarjetas{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.card{
+    background: #7b4694;
+    color: #ffffff;
+
+    width: 40rem;
+    padding-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    gap:1rem;
+}
+
+.card img{
+    width:100%
+}
+
+.titulo-contacto{
+    margin: 2rem 0;
+}
+
+.form-contacto{
+    background-color: #f4f2f6;
+    color:#30014a;
+    width: 100%;
+    max-width: 50rem;
+    font-size: 2rem;
+    padding: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+   
+}
+
+.grupo-field input,
+.grupo-field textarea{
+    border:none;
+    background-color:#f4f2f6;
+    border-bottom: solid 2px #30014a;
+    margin-bottom: 3rem;
+}
+
+
+.grupo-field{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+/* Media Query*/
+@media (max-width: 768px){
+    header,footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .div-logo,.header-nav{
+        margin:0;
+    }
+    .contenedor-tarjetas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*Carrito*/
+.mensaje-carrito-vacio{
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+.acciones-carrito{
+margin-top: 2rem;
+    }

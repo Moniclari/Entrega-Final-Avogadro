@@ -1,0 +1,5 @@
+[
+{"id":"1", "nombre": "Swiss Medical 10k", "distancia": "10K", "fecha":"12 de Octubre 2025", "img":"img/carrera1.jpg"},
+{"id":"2", "nombre": "Saucony Baires", "distancia": "15K", "fecha":"19 de Octubre 2025", "img":"img/carrera2.jpg"},
+{"id":"3", "nombre": "McDonald's Run", "distancia": "10K", "fecha":"19 de Octubre 2025", "img":"img/carrera3.jpg"}
+]

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="div-logo">
+				<a class="logo" href="../index.html">Logo</a>
+			</div>
+        	<nav class="header-nav">
+				<ul>
+					<li><a href="../index.html">Inicio</a></li>
+					<li><a href="./contact.html">Contacto</a></li>
+					<li><a href="./carrito.html" class="carrito-icono">
+						🛒<span id="contador-carrito">0</span>
+						</a>
+					</li>
+				</ul>
+        	</nav>
+    </header>
+    <main>
+        <h1>Carrito de Compras</h1>
+        <section id="contenedor-carrito">
+            <!--Productos del carrito-->
+        </section>
+        <div class="acciones-carrito" id="acciones-carrito">
+            <!--Botones de eliminar y finaliozar compra se agregan desde JS-->
+        </div>
+        <section id="resumen-carrito">
+            <!--Aca ira el resumen del carrito-->
+        </section>
+    </main>
+  	<footer>
+		<p>Sitio realizado por Monica. Copyright 2025.</p>
+	</footer>
+    <script src="../js/carrito.js" type="module"></script>
+</body>
+</html>
